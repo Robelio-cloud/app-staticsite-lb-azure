@@ -14,6 +14,7 @@ terraform {
 }
 
 
+
 provider "azurerm" {
   resource_provider_registrations = "none"
   features {
@@ -26,5 +27,5 @@ provider "azurerm" {
 resource "azurerm_resource_group" "rg" {
     name     = "rg-staticsite-lb-robelio"
     location = "brazilsouth"
-    
+
 }
